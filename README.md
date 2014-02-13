@@ -147,7 +147,7 @@ $ rails g devise User
 
 After these commands you get:
 
-* migration file to add fields to user;
+* migration file to add fields to user (run `rake db:migrate`);
 * user authentication routes (via the `devise_for :users` line);
 * configuration files (`config/initializers/devise.rb` and `config/locales/devise.en.yml`).
 
@@ -227,7 +227,7 @@ Don't forget to add a link to sign with facebook on your `app/views/devise/sessi
 
 You don't want to do `Task.all`, ever! It's Ok when you have a finite (and small) set of records but you don't know how many tasks the user will add.
 
-For pagination we'll use _[will_paginate](https://github.com/mislav/will_paginate)_. Add it to the Gemfile:
+For pagination we'll use [will_paginate](https://github.com/mislav/will_paginate). Add it to the Gemfile:
 
 ```ruby
 gem 'will_paginate'
@@ -335,20 +335,20 @@ Since we don't have much time there are a lot of topics that we couldn't cover a
 
 * **_[Factory girl](https://github.com/thoughtbot/factory_girl)_** - a fixtures replacement with a straightforward definition syntax, support for multiple build strategies and support for multiple factories for the same class (user, admin_user, and so on), including factory inheritance.
 
-* **_[CanCan](https://github.com/ryanb/cancan)_** - useful and simple gem for managing permissions and authorizations within your web app.
+* **[CanCan](https://github.com/ryanb/cancan)** - useful and simple gem for managing permissions and authorizations within your web app.
 
-* **_[Paperclip](https://github.com/thoughtbot/paperclip)_** - another good gem for file uploading and sometimes a good alternative for carrierwave.
+* **[Paperclip](https://github.com/thoughtbot/paperclip)** - another good gem for file uploading and sometimes a good alternative for carrierwave.
 
-* **_[Act as paroind](https://github.com/goncalossilva/acts_as_paranoid)_** - a simple gem for implementing soft delete (when you want to keep your deleted records hidden but still in the database)
+* **[Act as paroind](https://github.com/goncalossilva/acts_as_paranoid)** - a simple gem for implementing soft delete (when you want to keep your deleted records hidden but still in the database)
 
-* **_[Active admin](https://github.com/gregbell/active_admin)_** - a gem for generating a quick (and powerfull) backoffice.
+* **[Active admin](https://github.com/gregbell/active_admin)** - a gem for generating a quick (and powerfull) backoffice.
 
-* **_[FriendlyId](https://github.com/norman/friendly_id)_** - a gem that lets your transform your ugly links with tons of identifiers in pretty links, tailored for humans.
+* **[FriendlyId](https://github.com/norman/friendly_id)** - a gem that lets your transform your ugly links with tons of identifiers in pretty links, tailored for humans.
 
 #### Helpful links
 
-* **_[Ruby weekly](http://rubyweekly.com/)_** - a great newsletter about Ruby and Ruby on Rails.
+* **[Ruby weekly](http://rubyweekly.com/)** - a great newsletter about Ruby and Ruby on Rails.
 
-* **_[Rails casts](http://railscasts.com/)_** - greate audio and video casts spanning almost all main aspects and use cases in Ruby on Rails development.
+* **[Rails casts](http://railscasts.com/)** - greate audio and video casts spanning almost all main aspects and use cases in Ruby on Rails development.
 
-* **_[Heroku](https://www.heroku.com/)_** - a plataform that lets you put your web application online for free within minutes.
+* **[Heroku](https://www.heroku.com/)** - a plataform that lets you put your web application online for free within minutes.
